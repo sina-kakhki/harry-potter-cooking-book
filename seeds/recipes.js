@@ -6,7 +6,7 @@ exports.seed = function(knex) {
       // Inserts seed entries
       return knex('recipes').insert([
         {id: 1, name: 'Butterbeer II', description: 'desc', tags: ''},
-        {id: 2, name: 'rowValue1', description: 'desc', tags: ''},
+        {id: 2, name: 'Treacle Tart', description: 'desc', tags: ''},
         {id: 3, name: 'rowValue1', description: 'desc', tags: ''}
       ]);
     });
