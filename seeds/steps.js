@@ -1,10 +1,10 @@
 
 exports.seed = function(knex) {
   // Deletes ALL existing entries
-  return knex('table_name').del()
+  return knex('steps').del()
     .then(function () {
       // Inserts seed entries
-      return knex('table_name').insert([
+      return knex('steps').insert([
         {id: 1, recipe_id: 1, step: "Chill a glass mug in the freezer for at least 15 minutes."},
         {id: 2, recipe_id: 1, step: "Combine the butterscotch topping and soda water in the chilled mug; stir until thoroughly mixed. Pour the cream soda into the mug."},
         {id: 3, recipe_id: 1, step: "Stir the whipped cream, caramel sauce, and salt together in a small bowl; spoon atop the soda mixture. Stir lightly; it will froth!"},
