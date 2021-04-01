@@ -5,6 +5,6 @@ const router = express.Router()
 module.exports = router
 
 
-router.get('/test', (req, res) => {
+router.get('/', (req, res) => {
     res.send('<h1>Hello Recipes</h1>')
 })
