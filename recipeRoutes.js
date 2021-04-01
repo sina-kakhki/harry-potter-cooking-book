@@ -1,10 +1,33 @@
 const express = require('express')
+const db = require('./db')
 
 const router = express.Router()
 
 module.exports = router
 
+//placeholder routers - will work once configured with db & db functions
 
+// this route is for find.hbs - to display all recipes
 router.get('/', (req, res) => {
-    res.send('<h1>Hello Recipes</h1>')
+    db.getRecipes()
+        .then(recipes => {
+            console.log(recipes)
+            return res.render('find', { recipes: recipes })
+        })
+        .catch(err => {
+            res.status(500).send('DATABASE ERROR: ' + err.message)
+        })
+})
+
+// this route is for detail.hbs - to show an individual recipe
+router.get('/:id', (req, res) => {
+    const id = req.params.id
+    db.getRecipeById(id)
+        .then(profiles => {
+            console.log(profiles)
+            return res.render('details', details)
+        })
+        .catch(err => {
+            res.status(500).send('DATABASE ERROR: ' + err.message)
+        })
 })
