@@ -72,7 +72,9 @@ exports.seed = function (knex) {
         { id: 65, name: 'white cake mix' },
         { id: 66, name: 'frozen strawberries, thawed' },
         { id: 67, name: 'butter' },
-        { id: 68, name: 'confectioners\' sugar'}
+        { id: 68, name: 'confectioners\' sugar'},
+        { id: 69, name: 'rutabagas diced'},
+        { id: 70, name: 'Parmesan cheese'}
       ]);
     });
 };
