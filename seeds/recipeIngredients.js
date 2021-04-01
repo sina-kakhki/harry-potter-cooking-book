@@ -75,14 +75,14 @@ exports.seed = function(knex) {
         {recipe_id: 9, ingredient_id: 61, quantity: '1/2 teaspoon'},
         {recipe_id: 9, ingredient_id: 62, quantity: '1 (12 fluid ounce)'},
         {recipe_id: 9, ingredient_id: 63, quantity: '1 small scoop'},
-        {recipe_id: 10, ingredient_id: 64, quantity: '1 (3 ounce) package'}
-        {recipe_id: 10, ingredient_id: 16, quantity: '1/2 cup'}
-        {recipe_id: 10, ingredient_id: 65, quantity: '1 (18.25 ounce) package'}
-        {recipe_id: 10, ingredient_id: 37, quantity: '4'}
-        {recipe_id: 10, ingredient_id: 7, quantity: '1 cup'}
-        {recipe_id: 10, ingredient_id: 13, quantity: '3 tablespoons'}
-        {recipe_id: 10, ingredient_id: 66, quantity: '1 (10 ounce) package'}
-        {recipe_id: 10, ingredient_id: 67, quantity: '6 tablespoons'}
+        {recipe_id: 10, ingredient_id: 64, quantity: '1 (3 ounce) package'},
+        {recipe_id: 10, ingredient_id: 16, quantity: '1/2 cup'},
+        {recipe_id: 10, ingredient_id: 65, quantity: '1 (18.25 ounce) package'},
+        {recipe_id: 10, ingredient_id: 37, quantity: '4'},
+        {recipe_id: 10, ingredient_id: 7, quantity: '1 cup'},
+        {recipe_id: 10, ingredient_id: 13, quantity: '3 tablespoons'},
+        {recipe_id: 10, ingredient_id: 66, quantity: '1 (10 ounce) package'},
+        {recipe_id: 10, ingredient_id: 67, quantity: '6 tablespoons'},
         {recipe_id: 10, ingredient_id: 68, quantity: '2 cups'}
       ]);
     });
