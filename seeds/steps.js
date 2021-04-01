@@ -51,10 +51,10 @@ exports.seed = function(knex) {
         {id: 33, recipe_id: 9, step: "Stir rum and butterscotch schnapps together in a frosted 14-ounce mug."},
         {id: 34, recipe_id: 9, step: "Pour butter flavoring into the cream soda, then turn cream soda over to pour quickly into the chilled mug. Gently drop the ice cream into the soda mixture."},
 
-        {id: 32, recipe_id: 10, step: "Preheat the oven to 325 degrees F (165 degrees C). Grease and flour three 9 inch round cake pans."},
-        {id: 33, recipe_id: 10, step: "In a large bowl, dissolve the gelatin in cold water; stir in the cake mix, eggs, vegetable oil, flour and 1/2 of the strawberries. Beat for 5 minutes on the medium speed of an electric mixer. Divide the batter evenly between the prepared cake pans."},
-        {id: 34, recipe_id: 10, step: "Bake for 30 to 35 minutes in the preheated oven, or until the layers spring back when lightly pressed in the center. Cool cakes in the pans on wire racks."},
-        {id: 35, recipe_id: 10, step: "To Make Frosting: Cream the butter, sugar and the remaining half of the strawberries in a medium bowl until light and fluffy, adding additional confectioners' sugar if needed for a spreadable consistency. Spread the frosting between layers and over the top and sides of cake."},
+        {id: 35, recipe_id: 10, step: "Preheat the oven to 325 degrees F (165 degrees C). Grease and flour three 9 inch round cake pans."},
+        {id: 36, recipe_id: 10, step: "In a large bowl, dissolve the gelatin in cold water; stir in the cake mix, eggs, vegetable oil, flour and 1/2 of the strawberries. Beat for 5 minutes on the medium speed of an electric mixer. Divide the batter evenly between the prepared cake pans."},
+        {id: 37, recipe_id: 10, step: "Bake for 30 to 35 minutes in the preheated oven, or until the layers spring back when lightly pressed in the center. Cool cakes in the pans on wire racks."},
+        {id: 38, recipe_id: 10, step: "To Make Frosting: Cream the butter, sugar and the remaining half of the strawberries in a medium bowl until light and fluffy, adding additional confectioners' sugar if needed for a spreadable consistency. Spread the frosting between layers and over the top and sides of cake."},
       ]);
     });
 };
