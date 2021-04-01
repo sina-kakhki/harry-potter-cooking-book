@@ -45,7 +45,7 @@ exports.seed = function(knex) {
         
 
         {id: 31, recipe_id: 8, step: "Combine chocolate chips and peanut butter chips in top of double boiler. Stir frequently over low to medium heat until melted; add peanuts and stir."},
-        {id: 32, recipe_id: , step: "Drop by teaspoon full on wax paper. Allow to cool."},
+        {id: 32, recipe_id: 8, step: "Drop by teaspoon full on wax paper. Allow to cool."},
 
 
         {id: 33, recipe_id: 9, step: "Stir rum and butterscotch schnapps together in a frosted 14-ounce mug."},
