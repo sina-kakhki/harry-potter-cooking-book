@@ -11,6 +11,7 @@ module.exports = router
 router.get('/', (req, res) => {
     db.getRecipes()
         .then(recipes => {
+            console.log(recipes)
             return res.render('find', { recipes: recipes })
         })
         .catch(err => {

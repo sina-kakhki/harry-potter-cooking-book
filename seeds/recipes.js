@@ -5,7 +5,8 @@ exports.seed = function(knex) {
     .then(function () {
       // Inserts seed entries
       return knex('recipes').insert([
-        {id: 1, name: 'Harry Potter Butterbeer Recipe', description: 'A most popular wizarding beverage, butterbeers flavor is described as being similar to butterscotch. Pretty quick and easy', tags: ''},
+        {id: 1, name: 'Harry Potter Butterbeer Recipe', description: 'A most popular wizarding beverage, butterbeers flavor is described as being similar to butterscotch. Pretty quick and easy', tags: '', 
+      image: 'Harry Potter Butterbeer Recipe.png'},
         {id: 2, name: 'Treacle Tart', description: 'One of Harry Potters favorite dishes, treacle tart is a traditional English pastry with a sugary filling thats often topped off with a serving of clotted cream', tags: ''},
         {id: 3, name: 'Cornish Pasties', description: 'These perfectly flaky and golden pastries are stuffed with beef, pork, and root vegetables for a hearty dish.', tags: ''},
         {id: 4, name: 'Wizarding World Pumpkin Juice', description: 'Refreshing whether youre riding the Hogwarts Express or just hanging out at home', tags: ''},
