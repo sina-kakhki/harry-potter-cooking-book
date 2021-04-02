@@ -30,7 +30,7 @@ function getStepsById(id, db = connection) {
     return db('recipes')
         .join('steps', 'recipes.id', 'steps.recipe_id')
         .where('recipes.id', id)
-        .select('recipes.id as recipesId', 'steps.id as stepsId', 'step')
+        .select('recipes.id as recipesId', 'steps.id as stepsId', 'steps.sequence', 'step')
 }
 
 function getDetailsById(id, db = connection) {
