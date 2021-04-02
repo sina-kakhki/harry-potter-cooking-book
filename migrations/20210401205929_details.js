@@ -1,7 +1,7 @@
 exports.up = (knex) => {
     return knex.schema.createTable('details', (table) => {
       table.increments('id').primary()
-      table.integer('recipe_id')
+      table.integer('recipe_id').references('recipes.id')
       table.integer('prepTime')
       table.integer('additionalTime')
       table.string('servings')

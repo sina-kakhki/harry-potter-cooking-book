@@ -9,7 +9,7 @@ const recipeRoutes = require('./recipeRoutes')
 server.use(express.static('public'))
 server.use(express.urlencoded({ extended: false }))
 // Routes config - change here to match the hbs files
-server.use('/recip', recipeRoutes)
+server.use('/recipes', recipeRoutes)
 
 
 // Handlebars configuration
