@@ -1,13 +1,21 @@
-<div class="container grid grid-cols-2 mx-auto">
+<div class="bg-yellow-300">
+  <br>
+  <form class="form items-center text-center" action="/recipes/" method="post">
+    <label for="name" class="form-item">
+      Search:
+      <input type="text" name="search" value="">
+    </label>
+    <input type="submit" name="" value="Submit">
+  </form>
+
+  <div class="container grid grid-cols-2 mx-auto">
+
+
+
 
     {{#each recipes}}
-    <div class="m-5 items-center text-center">
-
-
-        <a href="recipes/{{id}}">{{name}}</a>
-
-
+    <div class="m-5 items-center text-center animate-pulse">
+      <a href="/recipes/{{id}}">{{name}}</a>
     </div>
     {{/each}}
-
-</div>
+  </div>
