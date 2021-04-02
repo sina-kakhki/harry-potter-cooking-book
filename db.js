@@ -5,6 +5,7 @@ const connection = require('knex')(config)
 module.exports = {
     getRecipes,
     getRecipeById,
+    searchRecipes,
     getIngredientsById,
     getStepsById,
     getDetailsById
@@ -16,6 +17,10 @@ function getRecipes(db = connection) {
 
 function getRecipeById(id, db = connection) {
     return db('recipes').select().where('recipes.id', id)
+}
+
+function searchRecipes(name, db = connection) {
+    return db('recipes').where('name', 'like', `%${name}%`)
 }
 
 function getIngredientsById(id, db = connection) {
