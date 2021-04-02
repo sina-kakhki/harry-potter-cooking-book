@@ -11,7 +11,6 @@ module.exports = router
 router.get('/', (req, res) => {
     db.getRecipes()
         .then(recipes => {
-            console.log(recipes)
             return res.render('find', { recipes: recipes })
         })
         .catch(err => {
@@ -23,8 +22,8 @@ router.get('/', (req, res) => {
 router.get('/:id', (req, res) => {
     const id = req.params.id
     db.getRecipeById(id)
-        .then(profiles => {
-            console.log(profiles)
+        .then(details => {
+            console.log(details)
             return res.render('details', details)
         })
         .catch(err => {

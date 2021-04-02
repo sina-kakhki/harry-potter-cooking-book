@@ -1,5 +1,13 @@
-{{#each recipes}}
+<div class="container grid grid-cols-2 mx-auto">
 
-{{id}}
+    {{#each recipes}}
+    <div class="m-5 items-center text-center">
 
-{{/each}}
+
+        <a href="recipes/{{id}}">{{name}}</a>
+
+
+    </div>
+    {{/each}}
+
+</div>
