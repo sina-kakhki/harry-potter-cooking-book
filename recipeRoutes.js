@@ -23,7 +23,6 @@ router.get('/:id', (req, res) => {
     const id = Number(req.params.id)
     return Promise.all([db.getRecipeById(id), db.getIngredientsById(id), db.getDetailsById(id), db.getStepsById(id)])
     .then(results => {
-        console.log(results[0])
         res.render('details', { recipe: results[0], ingredients: results[1], details: results[2], steps: results[3] })
       })
       .catch(err => {

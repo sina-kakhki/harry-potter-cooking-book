@@ -1,10 +1,8 @@
 <container>
-    {{#if recipe}}
+    {{#each recipe}}
     <h1>{{name}}</h1>
-
-    {{description}}
-    {{/if}}
-
+    <p>{{description}}</p>
+    {{/each}}
 
     <h1>Ingredients</h1>
     {{#each ingredients}}
@@ -14,9 +12,9 @@
     <h1>Details</h1>
     {{#each details}}
     <p>Preparation Time: {{prepTime}} </p>
-    <p>Additional Time: </p>{{additionalTime}}
-    <p>Servings: {{servings}}</p>
-    <p>Yield: {{yield}}</p>
+    <p>Additional Time: {{additionalTime}} </p>
+    <p>Servings: {{servings}} </p>
+    <p>Yield: {{yield}} </p>
     {{/each}}
 
     <h1>Steps</h1>
