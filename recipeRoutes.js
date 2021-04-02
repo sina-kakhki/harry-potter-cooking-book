@@ -21,13 +21,12 @@ router.get('/', (req, res) => {
 
 // this route is for detail.hbs - to show an individual recipe
 router.get('/:id', (req, res) => {
-    const id = req.params.id
-    db.getRecipeById(id)
-        .then(profiles => {
-            console.log(profiles)
-            return res.render('details', details)
-        })
-        .catch(err => {
-            res.status(500).send('DATABASE ERROR: ' + err.message)
-        })
-})
+    const id = Number(req.params.id)
+    return Promise.all([db.getIngredientsById(id), db.getDetailsById(id), db.getStepsById(id)])
+    .then(results => {
+        res.render('details', { ingredients: results[0], details: results[1], steps: results[2] })
+      })
+      .catch(err => {
+        res.status(500).send('DATABASE ERROR: ' + err.message)
+      })
+  })
