@@ -1,11 +1,15 @@
 <container>
+    <h1>Details</h1>
     {{#each details}}
-
+        <p>Preparation Time: {{prepTime}} </p>
+        <p>Additional Time: </p>{{additionalTime}}
+        <p>Servings: {{servings}}</p>
+        <p>Yield: {{yield}}</p>
     {{/each}}
 
 
     {{#each steps}}
-        {{step}}
+        {{sequence}} {{step}}
     {{/each}}
 </container>
 

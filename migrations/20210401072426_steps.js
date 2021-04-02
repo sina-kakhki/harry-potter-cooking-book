@@ -3,6 +3,7 @@ exports.up = (knex) => {
       table.increments('id').primary()
       table.integer('recipe_id').references('recipe.id')
       table.string('step')
+      table.string('sequence')
     })
   }
   
