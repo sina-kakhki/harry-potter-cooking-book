@@ -1,15 +1,27 @@
 <container>
-    <h1>Details</h1>
-    {{#each details}}
-        <p>Preparation Time: {{prepTime}} </p>
-        <p>Additional Time: </p>{{additionalTime}}
-        <p>Servings: {{servings}}</p>
-        <p>Yield: {{yield}}</p>
+    {{#if recipe}}
+    <h1>{{name}}</h1>
+
+    {{description}}
+    {{/if}}
+
+
+    <h1>Ingredients</h1>
+    {{#each ingredients}}
+    <input type="checkbox">{{quantity}} {{name}} <br/>
     {{/each}}
 
+    <h1>Details</h1>
+    {{#each details}}
+    <p>Preparation Time: {{prepTime}} </p>
+    <p>Additional Time: </p>{{additionalTime}}
+    <p>Servings: {{servings}}</p>
+    <p>Yield: {{yield}}</p>
+    {{/each}}
 
+    <h1>Steps</h1>
     {{#each steps}}
-        {{sequence}} {{step}}
+    {{sequence}} {{step}} <br/>
     {{/each}}
 </container>
 

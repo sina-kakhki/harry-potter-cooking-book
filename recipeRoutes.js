@@ -11,7 +11,6 @@ module.exports = router
 router.get('/', (req, res) => {
     db.getRecipes()
         .then(recipes => {
-            console.log(recipes)
             return res.render('find', { recipes: recipes })
         })
         .catch(err => {
@@ -22,9 +21,10 @@ router.get('/', (req, res) => {
 // this route is for detail.hbs - to show an individual recipe
 router.get('/:id', (req, res) => {
     const id = Number(req.params.id)
-    return Promise.all([db.getIngredientsById(id), db.getDetailsById(id), db.getStepsById(id)])
+    return Promise.all([db.getRecipeById(id), db.getIngredientsById(id), db.getDetailsById(id), db.getStepsById(id)])
     .then(results => {
-        res.render('details', { ingredients: results[0], details: results[1], steps: results[2] })
+        console.log(results[0])
+        res.render('details', { recipe: results[0], ingredients: results[1], details: results[2], steps: results[3] })
       })
       .catch(err => {
         res.status(500).send('DATABASE ERROR: ' + err.message)
