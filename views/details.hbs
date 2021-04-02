@@ -1,27 +1,30 @@
-<div class='flex justify-center bg-yellow-300 h-52'></div>
+<div class='flex justify-center bg-yellow-300 p-20'>
 <container>
     {{#each recipe}}
-    <img src="/public/images/{{image}}"
-    <h1>{{name}}</h1>
-    <p>{{description}}</p>
+    <img src="/public/images/{{image}}">
+    <h1 class="font-extrabold text-4xl">{{name}}</h1>
+    <p class="font-extrabold text-2xl">{{description}}</p>
     {{/each}}
 
-    <h1>Ingredients</h1>
-    {{#each ingredients}}
+    <h1 class="font-extrabold text-4xl">Ingredients</h1>
+    <div class="font-extrabold text-1xl">
+        {{#each ingredients}}
     <input type="checkbox">{{quantity}} {{name}} <br/>
     {{/each}}
+    </div>
 
-    <h1>Details</h1>
-    {{#each details}}
+    <h1 class="font-extrabold text-4xl">Details</h1>
+<div class="text-2xl font-extrabold">{{#each details}}
     <p>Preparation Time: {{prepTime}} </p>
     <p>Additional Time: {{additionalTime}} </p>
     <p>Servings: {{servings}} </p>
     <p>Yield: {{yield}} </p>
     {{/each}}
-
-    <h1>Steps</h1>
-    {{#each steps}}
+</div>
+    <h1 class="font-extrabold text-4xl">Steps</h1>
+    <div class="text-2xl font-extrabold">{{#each steps}}
     {{sequence}} {{step}} <br/>
     {{/each}}
+    </div>
 </container>
 </div>

@@ -1,21 +1,12 @@
-<<<<<<< HEAD
-<div class="flex justify-center bg-yellow-300 h-52">
-=======
 <div class="container grid grid-cols-2 mx-auto">
-    
-    
-  <form class="form" action="/recipes/" method="post">
- <label for="name" class="form-item">
-      Search:
-      <input type="text" name="search" value="">
-    </label>
-    <input type="submit" name="" value="Submit">
-  </form>
->>>>>>> 5c43fbfd562333f465d6d66f94e2306e32d09487
 
     {{#each recipes}}
     <div class="m-5 items-center text-center">
-        <a href="/recipes/{{id}}">{{name}}</a>
+
+
+        <a href="recipes/{{id}}">{{name}}</a>
+
+
     </div>
     {{/each}}
 
