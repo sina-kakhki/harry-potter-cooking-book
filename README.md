@@ -1,6 +1,6 @@
 # Harry Potter Recipe Book
 
-One day group project. As a team we decided to create a web based Harry Potter Recipe book.
+As a team we decided to create a web based Harry Potter Recipe book.
 
 ### From the command line
 
