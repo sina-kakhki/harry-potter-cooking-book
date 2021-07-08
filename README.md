@@ -31,7 +31,7 @@ Recipe Book Page|Sample Recipe Page
 ## Details
 
 ## Tech Stack
-**Client:** JavaScript, HandleBars, HTML and TailwindCSS
+**Client:** JavaScript, HandleBarsJS, HTML and TailwindCSS
 
 **Server:** NodeJS, KnexJS
 
